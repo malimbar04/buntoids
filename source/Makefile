@@ -27,7 +27,7 @@ clean:
 
 bak:
 	@make clean
-	@zip -q -j backup/$(PROG)_`date "+%x_(%X)"`.zip *
+	@zip -q -j backup/$(PROG)_`date "+%F-%X"`.zip *
 
 loc:
 	@cat *.cpp *.h | wc -l
